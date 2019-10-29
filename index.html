@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>E-Card! Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Indie+Flower|Montserrat|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type = "text/css" href="styles.css">
+    <script src="script.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <header id = "head">
+        <h1>E-Card! Generator</h1>
+        <h2>Fast, Easy, Effective</h2>
+    </header>
+    <header id = "body">
+        <h3>Do you want to wish your friend a Happy Birthday? Or maybe you want to say congrats to your brother for graduating from MIT? Mother's Day? Father's Day? There are way too many occasions to keep track of! And sending handwritten cards to everyone can be a lot of work. Well, do not fear, because E-Card! Generator is here, working specifically to your needs! So sit back, relax and enjoy the massive amount of time and effort you saved with E-Card! Generator - made by Akshat Jain.</h3>
+    </header>
+    <article class="edit-window">
+        <div id="buttons">
+          <button class = "tablink" onclick = "openStep('card',this)" id = "defaultOpen">Card</button>
+          <button class = "tablink" onclick = "openStep('message',this)">Message</button>
+          <button class = "tablink" onclick = "openStep('email',this)">E-Mail</button>
+        </div>
+
+
+        <div id = "card" class = "tab">
+          <h4>1. Select your Card!<h4>
+        </div>
+        <form class="contact" action="https://formspree.io/akshatj0101@gmail.com"method="POST">
+        <div id = "message" class = "tab">
+            <h4>2. Write A Personal Message!</h4>
+            <textarea id = "txtMessage" name="PersonalMessage" rows="29" cols="60" placeholder="Spill out your feelings...
+            ,-~-. _.---._ ,-~-.
+           / .- ,'       `. -. \
+           \ ` /`        ' \ ' /
+            `-/   'a___a`   \-'
+              |   ,'(_)`.   |
+              \  ( ._|_. )  /
+               \  `.___,'  /
+              .-`._     _,'-.
+            ,'  ,' `---' `.  `.
+           /   /     :     \   \
+         ,'   /      :      \   `.
+       ,'     |      :      |     `.
+      |     ,'|      :      |`.     |
+      `.__,'  \     :     /-. `.__,'
+                `.   :   ,'
+                  `._:_,'
+       "></textarea>
+     </div>
+
+        <div id = "email" class = "tab">
+          <h4>3. Enter E-Mail Addresses!</h4>
+                  <p class = "info">Your Name: </p><input type = 'text' id = 'Uf' name = 'UserFirstName' placeholder = 'James'> <input type = 'text' id = 'Ul' name = 'LastName' placeholder='Harden'>
+
+                  <p class = "info right">Your E-Mail: </p><input type = 'text' id = 'UEmail' name = 'UserEmail' placeholder = "hardenisgoat@rockets.com">
+
+                  <p class = "info">Reciever's Name: </p><input type = 'text' id = 'Rf' name = 'RecFirstName' placeholder = 'Michael'> <input type = 'text' id = 'Rl' name = 'RecLastName' placeholder='Jordan'>
+
+                  <p class = "info r">Reciever's E-Mail: </p><input type = 'text' id = 'REmail' name = 'RecEmail' placeholder = "jordanisgoat@bulls.com">
+
+
+                  <input id="orange" value = "Send" type = "submit"><br>Submit!
+              </form>
+        </div>
+
+
+    </article>
+
+  </body>
+</html>
